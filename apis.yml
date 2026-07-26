@@ -1,7 +1,24 @@
 aid: daydaycook
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/daydaycook.png
 name: DayDayCook
-description: DayDayCook is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: DayDayCook is a home-cooking content-to-commerce platform founded in Hong Kong that publishes
+  recipes, cooking videos, and food storytelling (its "Taste & Tales" blog) alongside a direct-to-consumer
+  shop selling its own branded sauces, ingredients, and prepared foods under the tagline "Easy Cooking,
+  Festive Flavours." The business pairs a culinary media audience with a consumer-packaged-goods and
+  e-commerce operation. It is a portfolio company of 500 Global and is tracked in the API Evangelist network.
+  As of this enrichment pass DayDayCook publishes a consumer web presence and online shop but exposes no
+  public developer API, developer portal, or machine-readable API specification.
 url: https://raw.githubusercontent.com/api-evangelist/daydaycook/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Food
+- Recipes
+- Cooking
+- Media
+- Content
+- Consumer
+- E-Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/daydaycook-domain-security.yml
 - type: Website
-  url: https://daydaycook.com
+  url: https://www.daydaycook.com/en
+- type: Blog
+  url: https://www.daydaycook.com/en/blogs
+- type: PrivacyPolicy
+  url: https://www.daydaycook.com/en/privacy-and-terms
+- type: TermsOfService
+  url: https://www.daydaycook.com/en/privacy-and-terms
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
